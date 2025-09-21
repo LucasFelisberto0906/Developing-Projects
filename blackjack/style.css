@@ -1,0 +1,88 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background: radial-gradient(circle at center, #006400 0%, #013220 100%);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: goldenrod;
+    font-size: 80px;
+    text-shadow: 2px 2px 8px #000, 0 0 15px #ffd700;
+    margin-bottom: 20px;
+}
+
+#message-el {
+    font-style: italic;
+    font-size: 24px;
+    margin: 15px 0;
+    color: #f0e68c;
+    text-shadow: 1px 1px 5px black;
+}
+
+#dealer-container, 
+#player-container {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+#dealer-container {
+    border: 2px solid #ff4d4d;
+}
+
+#player-container {
+    border: 2px solid #1aff1a;
+}
+
+button {
+    color: white;
+    width: 200px;
+    height: 70px;
+    background: linear-gradient(180deg, goldenrod, #b8860b);
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8);
+}
+
+#chips-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 15px;
+}
+
+.chip {
+    width: 70px;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.chip:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+#player-el, 
+#prize-el {
+    font-size: 26px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px black;
+}

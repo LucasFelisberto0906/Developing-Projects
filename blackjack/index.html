@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Blackjack</title>
+</head>
+<body>
+	<h1>Blackjack</h1>
+	<p id="message-el">Want to play a round?</p>
+	<div id="dealer-container">
+		<p id="dealer-el">Dealer:</p>
+		<p id="sumdealer-el">Sum:</p>
+	</div>
+	<div id="player-container">
+		<p id="cards-el">Cards:</p>
+		<p id="sum-el">Sum:</p>
+    </div>
+	<button onclick="startGame()">start game</button>
+    <button onclick="newCard()">hit</button>
+    <button onclick="playerStand()">stand</button>
+    <p id="player-el"></p>
+	<p id="prize-el">Prize Pot: $0</p>
+	<div id="chips-container">
+		<img src="/images/chip1.png" alt="Chip 1" onclick="addChip(1)" class="chip">
+		<img src="/images/chip5.png" alt="Chip 5" onclick="addChip(5)" class="chip">
+		<img src="/images/chip10.png" alt="Chip 10" onclick="addChip(10)" class="chip">
+		<img src="/images/chip25.png" alt="Chip 25" onclick="addChip(25)" class="chip">
+		<img src="/images/chip50.png" alt="Chip 50" onclick="addChip(50)" class="chip">
+		<img src="/images/chip100.png" alt="Chip 100" onclick="addChip(100)" class="chip">
+		<img src="/images/chip500.png" alt="Chip 500" onclick="addChip(500)" class="chip">
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
